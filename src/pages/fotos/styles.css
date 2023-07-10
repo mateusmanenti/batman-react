@@ -1,0 +1,40 @@
+.fotos-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.fotos-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+
+}
+
+.foto {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+}
+
+.foto-1 {
+    background-image: url('https://br.web.img3.acsta.net/newsv7/22/03/02/17/57/0799065.jpg');
+}
+
+.foto-2 {
+    background-image: url('https://i.pinimg.com/originals/0a/75/56/0a75565a68ebd62893d4230f8a5605a7.jpg');
+}
+
+.foto-3 {
+    background-image: url('https://cdn.mos.cms.futurecdn.net/23cRXWo4ene2rimkswqot5-320-80.jpg');
+}
+
+@media(max-width: 768px) {
+    .fotos-content{
+        grid-template-columns: 1fr;
+    }
+}
